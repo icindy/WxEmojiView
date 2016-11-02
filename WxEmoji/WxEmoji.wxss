@@ -1,0 +1,9 @@
+.WxEmojiView{
+    display: flex;
+    align-items: center;
+}
+
+.wxEmoji{
+    height: 23px;
+    width: 23px;
+}
