@@ -17,23 +17,20 @@ Page({
     })
   },
   onLoad: function () {
-    WxEmoji.init(":_/",{
-      "00":"00.gif",
-      "01":"01.gif",
-      "02":"02.gif",
-      "03":"03.gif",
-      "04":"04.gif",
-      "05":"05.gif",
-      "06":"06.gif",
-      "07":"07.gif",
-      "08":"08.gif",
-      "09":"09.gif"
-
-    });
+    
     var that = this
     var tempWxEmojiArray = WxEmoji.transEmojiStr(that.data.WxEmojiData);
     that.setData({
       WxEmojiArray: tempWxEmojiArray
     });
+  },
+  bindTextAreaBlur: function(e) {
+    console.log(e.detail.value)
+  },
+  WxEmojiTextareaFocus:function(e) {
+    console.log(e.detail.value)
+  },
+  WxEmojiTextareaBlur:function(){
+    cosole.log(e.detail.value);
   }
 })

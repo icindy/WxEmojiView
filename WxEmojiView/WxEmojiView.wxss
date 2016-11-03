@@ -7,3 +7,18 @@
     height: 23px;
     width: 23px;
 }
+.WxEmojiTextarea{
+    height: 50px;
+}
+.WxEmojiHiddenTextarea{
+    height: 50px;
+    position: absolute;
+    left:0;
+    top: 0;
+}
+.WxEmojiViewContainer{
+    position:fixed; 
+    left:0; 
+    bottom:0;
+    width: 100%;
+}

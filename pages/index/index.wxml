@@ -1,8 +1,13 @@
 <import src="../../WxEmojiView/WxEmojiView.wxml"/>
-<view class="section">
-  <textarea bindblur="bindTextAreaBlur" style="color:transparent;" value="hello" auto-height placeholder="自动变高" />
+
+<template is="WxEmojiTextarea" />
+
+<view class="WxEmojiViewContainer">
+    <textarea class="WxEmojiTextarea" bindfocus="WxEmojiTextareaFocus" bindblur="WxEmojiTextareaBlur"  value="hello"></textarea>
+    <view class="WxEmojiHiddenTextarea">jelll</view>
 </view>
 
-<template is="WxEmojiView" data="{{WxEmojiArray}}"/>
+
+
 
 
