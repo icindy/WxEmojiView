@@ -1,9 +1,0 @@
-<template name="WxEmoji">
-  <view class="WxEmojiView">
-    hello world!
-    <image class="wxEmoji" src="/WxEmoji/emojis/00.gif" />
-    <image class="wxEmoji" src="/WxEmoji/emojis/01.gif" />
-    <image class="wxEmoji" src="/WxEmoji/emojis/03.gif" />
-    <image class="wxEmoji" src="/WxEmoji/emojis/04.gif" />
-  </view>
-</template>

@@ -1,0 +1,12 @@
+
+<template name="WxEmojiView">
+  <view class="WxEmojiView">
+    <block wx:for="{{WxEmojiArray}}" wx:key="">
+      <block wx:if="{{item.node == 'text'}}">{{item.text}}</block>
+      <block wx:elif="{{item.node == 'element'}}">
+        <image class="wxEmoji" src="/WxEmojiView/emojis/{{item.text}}" />
+      </block>
+    </block>
+  </view>
+</template>
+

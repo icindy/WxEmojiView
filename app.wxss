@@ -1,4 +1,4 @@
-@import "/WxEmoji/WxEmoji.wxss";
+@import "/WxEmojiView/WxEmojiView.wxss";
 /**app.wxss**/
 .container {
   height: 100%;
