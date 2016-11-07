@@ -7,7 +7,8 @@ var app = getApp()
 Page({
   data: {
     motto: 'Hello World',
-    userInfo: {}
+    userInfo: {},
+    testText:"00:01:02:03"
   },
   //事件处理函数
   bindViewTap: function() {
@@ -19,27 +20,32 @@ Page({
     
     var that = this
     WxEmoji.bindThis(this);
-    var tempWxEmojiArray = WxEmoji.transEmojiStr(that.data.WxEmojiData);
-    that.setData({
-      WxEmojiArray: tempWxEmojiArray
-    });
+    
   },
   bindTextAreaBlur: function(e) {
     console.log(e.detail.value)
   },
   WxEmojiTextareaFocus:function(e) {
-    temTextArea = e;
-    e.detail.value = "1111111";
-    console.log(e.detail.value);
+    var that = this;
+    WxEmoji.WxEmojiTextareaFocus(that,e);
     
   },
   WxEmojiTextareaBlur:function(e){
-    var that = this
+    var that = this;
     WxEmoji.WxEmojiTextareaBlur(that,e);
   },
   wxPreEmojiTap: function(e){
-    var preText = e.target.dataset.text;
-    temTextArea.detail.value = temTextArea.detail.value + preText;
-    console.log(temTextArea.detail.value);
+    var that = this;
+    WxEmoji.wxPreEmojiTap(that,e);
+  },
+  testBlur: function(e){
+    var temObjs = {};
+    var that = this;
+    temObjs.showWxEmojiChooseView = 1;
+    temObjs.textAreaText = e.detail.value;
+    
+    that.setData({
+      WxEmojiObjs:temObjs
+    });
   }
 })

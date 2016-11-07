@@ -1,14 +1,20 @@
 .WxEmojiView{
-    display: flex;
     align-items: center;
 }
-
+.WxEmojiPreView{
+    margin: 20rpx 0;
+    padding: 20rpx 0;
+    background-color: #efefef;
+}
 .wxEmoji{
     height: 60rpx;
     width: 60rpx;
 }
 .WxEmojiTextarea{
-    height: 100rpx;
+    min-height: 200rpx;
+    border: 2rpx solid #eee;
+    margin: 10rpx;
+    width: 96%;
 }
 .WxEmojiHiddenTextarea{
     height: 100rpx;
@@ -24,9 +30,12 @@
 }
 .WxEmojiChooseChooseView{
     background-color: #eee;
+    display: flex;
 }
 .wxPreEmoji{
     height: 60rpx;
     width: 60rpx;
     margin: 10rpx;
+    display: inline-flex;
+    flex: 1;
 }
