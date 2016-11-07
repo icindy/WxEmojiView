@@ -4,14 +4,14 @@
 }
 
 .wxEmoji{
-    height: 23px;
-    width: 23px;
+    height: 60rpx;
+    width: 60rpx;
 }
 .WxEmojiTextarea{
-    height: 50px;
+    height: 100rpx;
 }
 .WxEmojiHiddenTextarea{
-    height: 50px;
+    height: 100rpx;
     position: absolute;
     left:0;
     top: 0;
@@ -21,4 +21,12 @@
     left:0; 
     bottom:0;
     width: 100%;
+}
+.WxEmojiChooseChooseView{
+    background-color: #eee;
+}
+.wxPreEmoji{
+    height: 60rpx;
+    width: 60rpx;
+    margin: 10rpx;
 }

@@ -7,8 +7,7 @@ Page({
   data: {
     motto: 'Hello World',
     userInfo: {},
-    WxEmojiData: "hello test! :00: :01: :02: _03_ /04 🍉",
-    WxEmojiArray: []
+    WxEmojiData: "hello test! :00: :01: :02: _03_ /04 🍉"
   },
   //事件处理函数
   bindViewTap: function() {
@@ -19,7 +18,7 @@ Page({
   onLoad: function () {
     
     var that = this
-    var tempWxEmojiArray = WxEmoji.transEmojiStr(that.data.WxEmojiData);
+    var tempWxEmojiArray = WxEmoji.transEmojiStr(that,that.data.WxEmojiData);
     that.setData({
       WxEmojiArray: tempWxEmojiArray
     });

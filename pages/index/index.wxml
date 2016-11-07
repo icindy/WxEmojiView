@@ -2,10 +2,7 @@
 
 <template is="WxEmojiTextarea" />
 
-<view class="WxEmojiViewContainer">
-    <textarea class="WxEmojiTextarea" bindfocus="WxEmojiTextareaFocus" bindblur="WxEmojiTextareaBlur"  value="hello"></textarea>
-    <view class="WxEmojiHiddenTextarea">jelll</view>
-</view>
+
 
 
 
