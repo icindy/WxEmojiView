@@ -48,9 +48,18 @@ function transEmojiStr(e,str){
   // return emojiObjs;
 }
 
+function WxEmojiTextareaBlur(target,e){
+    __this = target;
+    console.log(e.detail.value);
+    WxEmoji.transEmojiStr(__this,e.detail.value);
+}
+
+
+
 module.exports = {
   init:init,
   bindThis: bindThis,
   text:___text,
-  transEmojiStr: transEmojiStr
+  transEmojiStr: transEmojiStr,
+  WxEmojiTextareaBlur: WxEmojiTextareaBlur
 }

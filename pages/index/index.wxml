@@ -1,6 +1,6 @@
 <import src="../../WxEmojiView/WxEmojiView.wxml"/>
 
-<template is="WxEmojiTextarea" />
+<template is="WxEmojiTextarea" data="{{WxEmojiObjs}}" />
 
 
 

@@ -12,8 +12,20 @@
 
 <template name="WxEmojiTextarea">
   <view class="WxEmojiViewContainer">
+      
+      <!--效果显示-->
+      <view class="WxEmojiView">
+        <block wx:for="{{WxEmojiObjs.WxEmojiTextArray}}" wx:key="">
+          <block wx:if="{{item.node == 'text'}}">{{item.text}}</block>
+          <block wx:elif="{{item.node == 'element'}}">
+            <image class="wxEmoji" src="/WxEmojiView/emojis/{{item.text}}" />
+          </block>
+        </block>
+      </view>
+      
+      <!--输入框 常规下隐藏-->
       <textarea class="WxEmojiTextarea" bindfocus="WxEmojiTextareaFocus" bindblur="WxEmojiTextareaBlur"  value="hello"></textarea>
-      <view class="WxEmojiHiddenTextarea"></view>
+
       <view class="WxEmojiChooseChooseView" style="display:{{showWxEmojiChooseView == 1 ? 'block' : 'none'  }};">
           <image bindtap="wxPreEmojiTap" data-text=":00:" class="wxPreEmoji" src="/WxEmojiView/emojis/00.gif"/>
       </view>

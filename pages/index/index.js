@@ -7,9 +7,7 @@ var app = getApp()
 Page({
   data: {
     motto: 'Hello World',
-    userInfo: {},
-    WxEmojiData: "hello world! :00: :01: :02: _03_ /04 ",
-    WxEmojiArray: []
+    userInfo: {}
   },
   //事件处理函数
   bindViewTap: function() {
@@ -32,10 +30,12 @@ Page({
   WxEmojiTextareaFocus:function(e) {
     temTextArea = e;
     e.detail.value = "1111111";
-    console.log(e.detail.value)
+    console.log(e.detail.value);
+    
   },
   WxEmojiTextareaBlur:function(e){
-    console.log(e.detail.value);
+    var that = this
+    WxEmoji.WxEmojiTextareaBlur(that,e);
   },
   wxPreEmojiTap: function(e){
     var preText = e.target.dataset.text;

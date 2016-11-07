@@ -18,9 +18,6 @@ Page({
   onLoad: function () {
     
     var that = this
-    var tempWxEmojiArray = WxEmoji.transEmojiStr(that,that.data.WxEmojiData);
-    that.setData({
-      WxEmojiArray: tempWxEmojiArray
-    });
+    WxEmoji.transEmojiStr(that,that.data.WxEmojiData);
   }
 })
