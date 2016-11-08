@@ -7,7 +7,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "WxEmojiView",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
@@ -19,12 +19,12 @@
       "pagePath": "pages/index/index",
       "iconPath": "image/icon_API.png",
       "selectedIconPath": "image/icon_API_HL.png",
-      "text": "html"
+      "text": "TextArea"
     }, {
       "pagePath": "pages/test/test",
       "iconPath": "image/icon_API.png",
       "selectedIconPath": "image/icon_API_HL.png",
-      "text": "markdown"
+      "text": "Text"
     }]
   }
 }

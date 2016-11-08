@@ -1,4 +1,15 @@
-
+/**
+ * author: Di (微信小程序开发工程师)
+ * organization: WeAppDev(微信小程序开发论坛)(http://weappdev.com)
+ *               垂直微信小程序开发交流社区
+ * 
+ * github地址: https://github.com/icindy/WxEmojiView
+ * 
+ * for: WxEmojiView-微信小程序Emoji展示输入组件
+ * detail : 
+ * 
+ * version: alpha 0.1 非正式版
+ */
 var __this;
 let __emojis = {};//保存定义了的小表情
 var __emojiArray = [];
