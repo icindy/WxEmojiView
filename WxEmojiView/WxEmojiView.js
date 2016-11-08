@@ -4,7 +4,7 @@ let __emojis = {};//保存定义了的小表情
 var __emojiArray = [];
 var __reg;//正则表达式配置
 
-var ___text;//用于存储textarea值，上传保存需要用这个
+var ___text="";//用于存储textarea值，上传保存需要用这个
 var ___temTextArea;//用于纪录聚焦的textareare
 var ___Objs;
 
@@ -41,7 +41,9 @@ function buildTextAreaObjs(e,str){
   temObjs.showWxEmojiChooseView = 1;
   // temObjs.textAreaText = "hello test! :00: :01: :02: _03_ /04 🍉";
   ___text = str;
-  
+  if(typeof(___text) === 'undefined'){
+    ___text="";
+  }
   temObjs.WxEmojiTextArray = transEmojiStr(str);
   temObjs.textAreaText = ___text;
   temObjs.emojiArray = __emojiArray;
@@ -52,7 +54,8 @@ function buildTextAreaObjs(e,str){
 }
 
 function transEmojiStr(str){
-  var eReg = new RegExp("["+__reg+' '+"]");
+  // var eReg = new RegExp("["+__reg+' '+"]");
+  var eReg = new RegExp("["+__reg+"]");
   var array = str.split(eReg);
   var emojiObjs = [];
   for(var i = 0; i < array.length; i++){
